@@ -1,8 +1,8 @@
-import React from 'react'
-import { Router, Route, Switch } from 'react-router-dom'
-import createHistory from 'history/createBrowserHistory'
+import  * as React from 'react'
+import  { Router, Route, Switch } from 'react-router-dom'
+import {createBrowserHistory} from 'history'
 import login from '../view/login'
-const history = createHistory()
+const history = createBrowserHistory()
 export default function RouteMapping() {
     return (
         <Router history={history}>
