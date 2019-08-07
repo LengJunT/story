@@ -10,4 +10,4 @@
 * redis
 
 思维导图 v0.1
-![image](http://https://github.com/LengJunT/story/blob/master/img/story.jpg)
+![image](http://github.com/LengJunT/story/blob/master/img/story.jpg)
