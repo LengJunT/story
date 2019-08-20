@@ -17,11 +17,13 @@
       text-align: center;
       line-height: 2;
     }
-    .login-form-item {
-      margin-bottom: 15px;
-    }
-    .login-form-button {
-      width: 100%;
-    }
+  }
+}
+.login-form {
+  .login-form-item {
+    margin-bottom: 15px;
+  }
+  .login-form-button {
+    width: 100%;
   }
 }
