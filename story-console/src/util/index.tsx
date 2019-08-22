@@ -1,3 +1,8 @@
+export function setUserNameAndToken(token: string, username: string) {
+    setExpiredValue('story_login_token', token)
+    setValue('story_login_username', username)
+}
+
 export function getSessionTokenOrLocal() {
     const local = getExpiredValue('story_login_token') || ''
     const session = getValueSession('story_login_token')

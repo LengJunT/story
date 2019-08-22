@@ -1,0 +1,16 @@
+.page-writing{
+    padding: 20px;
+    .bf-container {
+        border: 1px solid #ccc;
+    }
+    .editor-title{
+        margin-bottom: 15px;
+        .title-input{
+            width: 300px;
+            margin-right: 20px
+        }
+        .ant-btn{
+            margin-right: 10px
+        }
+    }
+}

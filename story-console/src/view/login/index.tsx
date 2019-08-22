@@ -1,8 +1,15 @@
 import React, { useState } from 'react';
 import { Input, Icon, Button, message, Modal } from 'antd'
 import { login, registered } from '../../action/base'
+import { CommonRes } from '../../common/types'
+import { RouteComponentProps } from 'react-router'
+import { setUserNameAndToken } from '../../util'
 import './index.scss'
-
+interface LoginRes {
+    code: string;
+    content: string;
+    message: string;
+}
 const { Password } = Input
 function Registered() {
     const [name, setName] = useState<string>()
@@ -25,7 +32,7 @@ function Registered() {
             return
         }
         setConfirmLoading(true)
-        registered({ name, passWord: password }).then(()=>{
+        registered({ name, passWord: password }).then(() => {
             message.success('注册成功')
             hideModel()
         })
@@ -58,7 +65,8 @@ function Registered() {
         }
     }
 }
-function Login() {
+function Login(props: RouteComponentProps) {
+    console.log('login props', props)
     const [name, setName] = useState<string>()
     const [password, setPassWord] = useState<string>()
     const handleLogin = () => {
@@ -77,8 +85,10 @@ function Login() {
         //     message.error('密码或用户名错误')
         //     return
         // }
-        login({ name, passWord: password }).then(() => {
-            // console.log(res)
+        login({ name, passWord: password }).then((res: CommonRes) => {
+            const { content } = res
+            setUserNameAndToken(content, name)
+            props.history.push('/console/writing')
         })
     }
     return (
