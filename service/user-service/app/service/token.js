@@ -20,6 +20,7 @@ class TokenService extends Service {
 
     async decryptionToken(token) {
         let cert = await fs.readFileSync(path.join(__dirname, '../public/rsa_public_key.pem'));
+        let res 
         try{
             let result = jwt.verify(token, cert, {algorithms: ['RS256']}) || {};
             let {exp = 0} = result,current = Math.floor(Date.now()/1000);

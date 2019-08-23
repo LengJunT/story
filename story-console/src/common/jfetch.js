@@ -28,7 +28,7 @@ class _JFetch {
         }
         const token = getSessionTokenOrLocal()
         if (token) {
-          this.opts.headers['Authorization'] = `Bearer ${token}`
+          this.opts.headers['Authorization'] = `${token}`
         }
         request.set(this.opts.headers)
         if (data) {
