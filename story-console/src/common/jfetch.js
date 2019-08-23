@@ -44,7 +44,6 @@ class _JFetch {
           // }
           let data = res.body
           let { code = '', content = {} } = data
-          const { errorCode = '' } = content
           if (code === 'SUCCESS') {
             resolve(data || '')
           } else {

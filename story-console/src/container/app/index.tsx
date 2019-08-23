@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
 import { Switch, Link } from 'react-router-dom'
-import { Layout, Menu, Breadcrumb, Icon } from 'antd';
+import { Layout, Menu } from 'antd';
 import { RouteComponentProps } from 'react-router'
 import { routerList } from '../../router'
+import { getSessionTokenOrLocal, logout } from '../../util'
 import './index.scss'
 const { Header, Content, Footer, Sider } = Layout;
-const { SubMenu } = Menu;
-export default function App(props:RouteComponentProps) {
+export default function App(props: RouteComponentProps) {
   const [collapsed, setCollapse] = useState<boolean>(false)
   const onCollapse = () => setCollapse(!collapsed)
   const defaultsKeys = props.location.pathname
+  const token = getSessionTokenOrLocal()
+  if (token === '') {
+    debugger
+    logout()
+    return null
+  }
   return (
     <Layout style={{ minHeight: '100vh' }}>
       <Sider collapsible collapsed={collapsed} onCollapse={onCollapse}>

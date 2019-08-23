@@ -1,34 +1,37 @@
 import React, { useState } from 'react';
 import { Input, Button, message } from 'antd'
 import BraftEditor from 'braft-editor'
+import { setArticle } from '../../action/article'
+import { CommonRes } from '../../common/types'
 import 'braft-editor/dist/index.css'
 import './index.scss'
 export default function Dashboard() {
     const [editorState, setEditorState] = useState<any>()
     const [title, setTitle] = useState<string>('')
 
-    const handleArticle = (): boolean | Object => {
+    const handleArticle = (isDraft: boolean) => {
         if (!title) {
             message.warning('请填写文章标题')
             return false
         }
         const htmlContent = editorState.toHTML()
-        return {
+        const data = {
             title,
-            content: htmlContent
+            content: htmlContent,
+            isDraft
+        }
+        if (data) {
+            setArticle(data).then((res: CommonRes )=> {
+
+            })
         }
     }
     const submitContent = () => {
-        const data = handleArticle()
-        if (data) {
-            // ajax
-        }
+        handleArticle(false)
     }
     const submitContentDraft = () => {
-        const data = handleArticle()
-        if (data) {
-            // ajax
-        }
+        handleArticle(true)
+
     }
     const handleTitle = (e: React.ChangeEvent<HTMLInputElement>) => {
         const value: string | undefined = e.target.value

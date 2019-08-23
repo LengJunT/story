@@ -1,6 +1,6 @@
 import  * as React from 'react'
 import Loadable from 'react-loadable'
-import  { Router, Route } from 'react-router-dom'
+import  { Route } from 'react-router-dom'
 import Res404 from '../component/result/404'
 const loadingPage = Res404
 

@@ -5,7 +5,7 @@ class RegisteredController extends Controller {
         const {body} = this.ctx.request
         console.log('this.ctx.request',body)
         const { name = '', passWord = '' } = body
-        const checkName = name === '' || name.length < 6
+        const checkName = name === '' || name.length < 4
         const checkPassWord = pattern.test(passWord)
         let content = false
         let message = ''

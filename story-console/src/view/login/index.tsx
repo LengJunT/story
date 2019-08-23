@@ -22,7 +22,7 @@ function Registered() {
     const hideModel = () => {
         setVisible(false)
     }
-    const registeredUser = () => {
+    const registeredUser = async () => {
         if (name === undefined || name === '') {
             message.warning('请输入用户名')
             return
@@ -32,10 +32,15 @@ function Registered() {
             return
         }
         setConfirmLoading(true)
-        registered({ name, passWord: password }).then(() => {
+        const res: CommonRes = await registered({ name, passWord: password })
+        const { content, message: msg } = res
+        if (content) {
             message.success('注册成功')
             hideModel()
-        })
+        } else {
+            message.warning(msg)
+        }
+        setConfirmLoading(false)
     }
     return (
         <React.Fragment>
@@ -86,9 +91,13 @@ function Login(props: RouteComponentProps) {
         //     return
         // }
         login({ name, passWord: password }).then((res: CommonRes) => {
-            const { content } = res
-            setUserNameAndToken(content, name)
-            props.history.push('/console/writing')
+            const { content, message: msg } = res
+            if (content) {
+                setUserNameAndToken(content, name)
+                props.history.push('/console/writing')
+            } else {
+                message.warning(msg)
+            }
         })
     }
     return (
