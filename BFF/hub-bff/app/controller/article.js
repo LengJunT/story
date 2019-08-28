@@ -4,16 +4,24 @@ module.exports = class ArticleController extends Controller {
         const ctx = this.ctx
         const {body, header = {}} = ctx.request
         const {authorization:token} = header
-        const {title,content} = body
+        const {title,content, isDraft} = body
         if(!token){
             ctx.body = {
-                code: 'SUCCESS',
+                code: 'FALL',
                 message:'非法用户',
                 content:''
             }
             return
         }
-        const user = await ctx.service.token.index(token)
+        const {name,id} = await ctx.service.token.index(token)
+        if(!name || !id){
+            ctx.body = {
+                code: 'FALL',
+                message:'非法用户',
+                content:''
+            }
+            return
+        }
         console.log('bff token', user)
         ctx.body = {
             code: 'SUCCESS',
