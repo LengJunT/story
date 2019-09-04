@@ -22,4 +22,27 @@ module.exports = class ArticleService extends Service {
         }
         return result.affectedRows === 1
     }
+
+    async getMyArticle({ uid }) {
+        const article = await this.app.mysql.select('article', { where:{uid: uid} }) || []
+        const articleDraft = await this.app.mysql.select('article_draft', { where:{uid: uid} }) || []
+        return {
+            article: handleArticle(article) || [],
+            articleDraft: handleArticle(articleDraft) || []
+        }
+    }
+}
+
+function handleArticle(article) {
+    if(!article || !article.length){
+        return []
+    }
+    return JSON.parse(JSON.stringify(article)).map(item => {
+        // item = JSON.parse(JSON.stringify(item))
+        // const nid = JSON.parse(JSON.stringify(item.id))
+        // const nuid = JSON.parse(JSON.stringify(item.uid))
+        item.id = new Buffer(item.id).toString()
+        item.uid = new Buffer(item.uid).toString()
+        return item
+    })
 }

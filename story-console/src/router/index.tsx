@@ -18,8 +18,14 @@ const asyncDashboard = Loadable({
     loading: loadingPage
   })
 
+  const asyncArticleList = Loadable({
+    loader: () => import('../view/articleList'/* webpackChunkName: 'dashboard' */),
+    loading: loadingPage
+  })
+
   export const routerList = [
     <Route path="/console/dashboard" key="/console/dashboard" exact component={asyncDashboard} />,
-    <Route path="/console/writing" key="/console/writing" exact component={asyncWriting} />,    
+    <Route path="/console/writing" key="/console/writing" exact component={asyncWriting} />,  
+    <Route path="/console/myArticle" key="/console/myArticle" exact component={asyncArticleList} />,    
     <Route path="/console/user" key="/console/user" exact component={asyncUser} />
   ]

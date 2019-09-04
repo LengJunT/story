@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import { Input, Button, message } from 'antd'
 import BraftEditor from 'braft-editor'
 import { setArticle } from '../../action/article'
@@ -31,7 +31,6 @@ export default function Dashboard() {
     }
     const submitContentDraft = () => {
         handleArticle(true)
-
     }
     const handleTitle = (e: React.ChangeEvent<HTMLInputElement>) => {
         const value: string | undefined = e.target.value

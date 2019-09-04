@@ -27,6 +27,9 @@ export default function App(props: RouteComponentProps) {
           <Menu.Item key="/console/writing">
             <Link to="/console/writing"><span>写文章</span></Link>
           </Menu.Item>
+          <Menu.Item key="/console/myArticle">
+            <Link to="/console/myArticle"><span>我的文章</span></Link>
+          </Menu.Item>
         </Menu>
       </Sider>
       <Layout>
