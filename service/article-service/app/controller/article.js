@@ -3,9 +3,11 @@ const Controller = require('egg').Controller;
 class ArticleController extends Controller {
     async index() {
         const { body } = this.ctx.request
-        const { id, title, content, isDraft } = body
-        if(title && content){
+        const { id, title, content, isDraft, uid } = body
+        console.log('article contronller body', body)
+        if(title && content && uid){
             const type = await this.ctx.service.article.handelEditArticle(body)
+            console.log('article contronller', type)
             if(type){
                 this.ctx.body = {
                     code: 'SUCCESS',

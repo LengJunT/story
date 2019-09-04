@@ -43,14 +43,14 @@ class _JFetch {
           //   setToken(token)
           // }
           let data = res.body
-          let { code = '', content = {} } = data
+          let { code = '', content = {}, message } = data
           if (code === 'SUCCESS') {
             resolve(data || '')
           } else {
            if (Object.getOwnPropertyNames(content).length === 0) {
               data['content'] = { message: '操作失败，请稍后再试！' }
             } else if (typeof content === 'string') {
-              data['content'] = { message: content }
+              data['content'] = { message }
             }
             reject(data || '')
           }

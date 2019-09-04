@@ -11,8 +11,8 @@ class LoginController extends Controller {
             const res = await ctx.service.login.index({name,passWord})
             console.log('res', res)
             ctx.body = {
-                ...res,
-                code:'SUCCESS'
+                code:'SUCCESS',
+                ...res
             }
             return
         }else {

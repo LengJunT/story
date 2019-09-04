@@ -2,11 +2,12 @@ const Service = require('egg').Service;
 const V4 = require('uuid')
 
 module.exports = class ArticleService extends Service {
-    async handelEditArticle({ id, title, content, isDraft }) {
+    async handelEditArticle({ id, title, content, isDraft, uid }) {
         // let hasArticle = await this.app.mysql.get('article', { id, id })
         const tableName = isDraft ? 'article_draft' : 'article'
         let data = {
             id,
+            uid,
             title,
             content
         }

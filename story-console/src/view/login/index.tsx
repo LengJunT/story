@@ -98,6 +98,8 @@ function Login(props: RouteComponentProps) {
             } else {
                 message.warning(msg)
             }
+        }).catch((res: CommonRes)=>{
+            message.warning(res.message)
         })
     }
     return (
