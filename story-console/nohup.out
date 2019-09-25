@@ -95,3 +95,713 @@ Something is already running on port 3000.
 > react-app-rewired start
 
 Something is already running on port 3000.
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 19:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 19:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 20:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 20:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 21:  'data' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  Line 21:  'setData' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Files successfully emitted, waiting for typecheck results...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used                @typescript-eslint/no-unused-vars
+  Line 23:  'loading' is assigned a value but never used       @typescript-eslint/no-unused-vars
+  Line 23:  'setLoading' is assigned a value but never used    @typescript-eslint/no-unused-vars
+  Line 24:  'hasMore' is assigned a value but never used       @typescript-eslint/no-unused-vars
+  Line 24:  'setHasMore' is assigned a value but never used    @typescript-eslint/no-unused-vars
+  Line 29:  'articleDraft' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 33:  Expected to return a value in arrow function       array-callback-return
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Files successfully emitted, waiting for typecheck results...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 24:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 24:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 25:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Files successfully emitted, waiting for typecheck results...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Files successfully emitted, waiting for typecheck results...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Files successfully emitted, waiting for typecheck results...
+Failed to compile.
+
+/Users/lengjun/mycode/story/story-console/src/view/articleList/index.tsx
+TypeScript error in /Users/lengjun/mycode/story/story-console/src/view/articleList/index.tsx(64,50):
+Type '{ __html: string | undefined; }' is not assignable to type '{ __html: string; }'.
+  Types of property '__html' are incompatible.
+    Type 'string | undefined' is not assignable to type 'string'.
+      Type 'undefined' is not assignable to type 'string'.  TS2322
+
+    62 |                 {title}
+    63 |             </div>
+  > 64 |             <div className="articl-item-content" dangerouslySetInnerHTML={{ __html: content }} />
+       |                                                  ^
+    65 |             {
+    66 |                 draft ? <span>草稿</span> : null
+    67 |             }
+Compiling...
+Files successfully emitted, waiting for typecheck results...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Files successfully emitted, waiting for typecheck results...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Files successfully emitted, waiting for typecheck results...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Failed to compile.
+
+./src/view/articleList/index.scss (./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-5-1!./node_modules/postcss-loader/src??postcss!./node_modules/sass-loader/lib/loader.js??ref--6-oneOf-5-3!./src/view/articleList/index.scss)
+        border-radius: 4p;x
+                         ^
+      Property "x" must be followed by a ':'
+      in /Users/lengjun/mycode/story/story-console/src/view/articleList/index.scss (line 17, column 27)
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/view/articleList/index.tsx
+  Line 3:   'List' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 3:   'message' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 25:  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 25:  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:  'hasMore' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 26:  'setHasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 58:  'content' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+

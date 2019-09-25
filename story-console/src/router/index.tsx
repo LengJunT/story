@@ -10,16 +10,16 @@ const asyncDashboard = Loadable({
   })
 
   const asyncUser = Loadable({
-    loader: () => import('../view/user'/* webpackChunkName: 'dashboard' */),
+    loader: () => import('../view/user'/* webpackChunkName: 'user' */),
     loading: loadingPage
   })
   const asyncWriting = Loadable({
-    loader: () => import('../view/writing'/* webpackChunkName: 'dashboard' */),
+    loader: () => import('../view/writing'/* webpackChunkName: 'writing' */),
     loading: loadingPage
   })
 
   const asyncArticleList = Loadable({
-    loader: () => import('../view/articleList'/* webpackChunkName: 'dashboard' */),
+    loader: () => import('../view/articleList'/* webpackChunkName: 'article list' */),
     loading: loadingPage
   })
 
