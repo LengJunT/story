@@ -1,0 +1,507 @@
+
+> user-service@1.0.0 start /Users/lengjun/mycode/story/service/article-service
+> egg-scripts start --port=7003 --daemon --title=egg-server-demo
+
+[egg-scripts] Starting egg application at /Users/lengjun/mycode/story/service/article-service
+[egg-scripts] Run node /Users/lengjun/mycode/story/service/article-service/node_modules/egg-scripts/lib/start-cluster {"port":7003,"title":"egg-server-demo","baseDir":"/Users/lengjun/mycode/story/service/article-service","framework":"/Users/lengjun/mycode/story/service/article-service/node_modules/egg"} --title=egg-server-demo
+[egg-scripts] Save log file to /Users/lengjun/logs
+[egg-scripts] Wait Start: 1...
+[egg-scripts] Wait Start: 2...
+[egg-scripts] egg started on http://127.0.0.1:7003
+
+> user-service@1.0.0 start /Users/lengjun/mycode/story/service/article-service
+> egg-scripts start --port=7003 --daemon --title=egg-server-demo
+
+[egg-scripts] Starting egg application at /Users/lengjun/mycode/story/service/article-service
+[egg-scripts] Run node /Users/lengjun/mycode/story/service/article-service/node_modules/egg-scripts/lib/start-cluster {"port":7003,"title":"egg-server-demo","baseDir":"/Users/lengjun/mycode/story/service/article-service","framework":"/Users/lengjun/mycode/story/service/article-service/node_modules/egg"} --title=egg-server-demo
+[egg-scripts] Save log file to /Users/lengjun/logs
+[egg-scripts] Wait Start: 1...
+[egg-scripts] Wait Start: 2...
+[egg-scripts] tail -n 100 /Users/lengjun/logs/master-stderr.log
+[egg-scripts] Got error when startup: 
+[egg-scripts] 2019-09-24 18:19:58,443 ERROR 37136 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:19:58,451 ERROR 37135 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:19:58,452 ERROR 37142 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:19:58,454 ERROR 37138 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:19:58,459 ERROR 37132 nodejs.AppWorkerDiedError: [master] app_worker#3:37136 died (code: 0, signal: null, suicide: false, state: dead), current workers: ["1","2","4","5","6","7","8","9","10","11","12"]
+[egg-scripts]     at Master.onAppExit (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/master.js:510:21)
+[egg-scripts]     at emitOne (events.js:116:13)
+[egg-scripts]     at Master.emit (events.js:211:7)
+[egg-scripts]     at Messenger.sendToMaster (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/utils/messenger.js:137:17)
+[egg-scripts]     at Messenger.send (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/utils/messenger.js:102:12)
+[egg-scripts]     at EventEmitter.cluster.on (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/master.js:353:22)
+[egg-scripts]     at emitThree (events.js:141:20)
+[egg-scripts]     at EventEmitter.emit (events.js:217:7)
+[egg-scripts]     at ChildProcess.worker.process.once (internal/cluster/master.js:186:13)
+[egg-scripts]     at Object.onceWrapper (events.js:317:30)
+[egg-scripts] name: "AppWorkerDiedError"
+[egg-scripts] pid: 37132
+[egg-scripts] hostname: lengjun.local
+[egg-scripts] 
+[egg-scripts] 2019-09-24 18:19:58,460 ERROR 37132 [master] app_worker#3:37136 start fail, exiting with code:1
+[egg-scripts] 2019-09-24 18:19:58,460 ERROR 37132 [master] exit with code:1
+[egg-scripts] 2019-09-24 18:19:58,462 ERROR 37134 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:19:58,470 ERROR 37145 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:19:58,471 ERROR 37133 [agent_worker] receive disconnect event on child_process fork mode, exiting with code:110
+[egg-scripts] 2019-09-24 18:19:58,473 ERROR 37143 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:19:58,476 ERROR 37139 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:19:58,476 ERROR 37140 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:19:58,482 ERROR 37133 [agent_worker] exit with code:110
+[egg-scripts] 2019-09-24 18:19:58,483 ERROR 37137 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:19:58,490 ERROR 37144 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:19:58,490 ERROR 37141 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 
+[egg-scripts] Start got error, see /Users/lengjun/logs/master-stderr.log
+[egg-scripts] Or use `--ignore-stderr` to ignore stderr at startup.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! user-service@1.0.0 start: `egg-scripts start --port=7003 --daemon --title=egg-server-demo`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the user-service@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/lengjun/.npm/_logs/2019-09-24T10_19_59_685Z-debug.log
+
+> user-service@1.0.0 start /Users/lengjun/mycode/story/service/article-service
+> egg-scripts start --port=7003 --daemon --title=egg-server-demo
+
+[egg-scripts] Starting egg application at /Users/lengjun/mycode/story/service/article-service
+[egg-scripts] Run node /Users/lengjun/mycode/story/service/article-service/node_modules/egg-scripts/lib/start-cluster {"port":7003,"title":"egg-server-demo","baseDir":"/Users/lengjun/mycode/story/service/article-service","framework":"/Users/lengjun/mycode/story/service/article-service/node_modules/egg"} --title=egg-server-demo
+[egg-scripts] Save log file to /Users/lengjun/logs
+[egg-scripts] Wait Start: 1...
+[egg-scripts] Wait Start: 2...
+[egg-scripts] tail -n 100 /Users/lengjun/logs/master-stderr.log
+[egg-scripts] Got error when startup: 
+[egg-scripts] 2019-09-24 18:31:40,659 ERROR 37772 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:31:40,673 ERROR 37769 nodejs.AppWorkerDiedError: [master] app_worker#2:37772 died (code: 0, signal: null, suicide: false, state: dead), current workers: ["1","3","4","5","6","7","8","9","10","11","12"]
+[egg-scripts]     at Master.onAppExit (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/master.js:510:21)
+[egg-scripts]     at emitOne (events.js:116:13)
+[egg-scripts]     at Master.emit (events.js:211:7)
+[egg-scripts]     at Messenger.sendToMaster (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/utils/messenger.js:137:17)
+[egg-scripts]     at Messenger.send (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/utils/messenger.js:102:12)
+[egg-scripts]     at EventEmitter.cluster.on (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/master.js:353:22)
+[egg-scripts]     at emitThree (events.js:141:20)
+[egg-scripts]     at EventEmitter.emit (events.js:217:7)
+[egg-scripts]     at ChildProcess.worker.process.once (internal/cluster/master.js:186:13)
+[egg-scripts]     at Object.onceWrapper (events.js:317:30)
+[egg-scripts] name: "AppWorkerDiedError"
+[egg-scripts] pid: 37769
+[egg-scripts] hostname: lengjun.local
+[egg-scripts] 
+[egg-scripts] 2019-09-24 18:31:40,674 ERROR 37769 [master] app_worker#2:37772 start fail, exiting with code:1
+[egg-scripts] 2019-09-24 18:31:40,674 ERROR 37769 [master] exit with code:1
+[egg-scripts] 2019-09-24 18:31:40,676 ERROR 37773 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:31:40,677 ERROR 37771 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:31:40,680 ERROR 37770 [agent_worker] receive disconnect event on child_process fork mode, exiting with code:110
+[egg-scripts] 2019-09-24 18:31:40,681 ERROR 37780 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:31:40,681 ERROR 37782 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:31:40,684 ERROR 37770 [agent_worker] exit with code:110
+[egg-scripts] 2019-09-24 18:31:40,685 ERROR 37775 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:31:40,687 ERROR 37781 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:31:40,687 ERROR 37774 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:31:40,687 ERROR 37777 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:31:40,688 ERROR 37779 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:31:40,690 ERROR 37778 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:31:40,690 ERROR 37776 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 
+[egg-scripts] Start got error, see /Users/lengjun/logs/master-stderr.log
+[egg-scripts] Or use `--ignore-stderr` to ignore stderr at startup.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! user-service@1.0.0 start: `egg-scripts start --port=7003 --daemon --title=egg-server-demo`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the user-service@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/lengjun/.npm/_logs/2019-09-24T10_31_41_942Z-debug.log
+
+> user-service@1.0.0 start /Users/lengjun/mycode/story/service/article-service
+> egg-scripts start --port=7003 --daemon --title=egg-server-demo
+
+[egg-scripts] Starting egg application at /Users/lengjun/mycode/story/service/article-service
+[egg-scripts] Run node /Users/lengjun/mycode/story/service/article-service/node_modules/egg-scripts/lib/start-cluster {"port":7003,"title":"egg-server-demo","baseDir":"/Users/lengjun/mycode/story/service/article-service","framework":"/Users/lengjun/mycode/story/service/article-service/node_modules/egg"} --title=egg-server-demo
+[egg-scripts] Save log file to /Users/lengjun/logs
+[egg-scripts] Wait Start: 1...
+[egg-scripts] Wait Start: 2...
+[egg-scripts] tail -n 100 /Users/lengjun/logs/master-stderr.log
+[egg-scripts] Got error when startup: 
+[egg-scripts] 2019-09-24 18:36:12,221 ERROR 38069 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:36:12,222 ERROR 38070 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:36:12,223 ERROR 38072 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:36:12,224 ERROR 38074 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:36:12,225 ERROR 38071 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:36:12,232 ERROR 38073 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:36:12,241 ERROR 38067 nodejs.AppWorkerDiedError: [master] app_worker#1:38069 died (code: 0, signal: null, suicide: false, state: dead), current workers: ["2","3","4","5","6","7","8","9","10","11","12"]
+[egg-scripts]     at Master.onAppExit (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/master.js:510:21)
+[egg-scripts]     at emitOne (events.js:116:13)
+[egg-scripts]     at Master.emit (events.js:211:7)
+[egg-scripts]     at Messenger.sendToMaster (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/utils/messenger.js:137:17)
+[egg-scripts]     at Messenger.send (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/utils/messenger.js:102:12)
+[egg-scripts]     at EventEmitter.cluster.on (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/master.js:353:22)
+[egg-scripts]     at emitThree (events.js:141:20)
+[egg-scripts]     at EventEmitter.emit (events.js:217:7)
+[egg-scripts]     at ChildProcess.worker.process.once (internal/cluster/master.js:186:13)
+[egg-scripts]     at Object.onceWrapper (events.js:317:30)
+[egg-scripts] name: "AppWorkerDiedError"
+[egg-scripts] pid: 38067
+[egg-scripts] hostname: lengjun.local
+[egg-scripts] 
+[egg-scripts] 2019-09-24 18:36:12,241 ERROR 38075 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:36:12,241 ERROR 38067 [master] app_worker#1:38069 start fail, exiting with code:1
+[egg-scripts] 2019-09-24 18:36:12,242 ERROR 38067 [master] exit with code:1
+[egg-scripts] 2019-09-24 18:36:12,244 ERROR 38076 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:36:12,250 ERROR 38078 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:36:12,251 ERROR 38080 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:36:12,251 ERROR 38068 [agent_worker] receive disconnect event on child_process fork mode, exiting with code:110
+[egg-scripts] 2019-09-24 18:36:12,252 ERROR 38079 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:36:12,254 ERROR 38077 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:36:12,254 ERROR 38068 [agent_worker] exit with code:110
+[egg-scripts] 
+[egg-scripts] Start got error, see /Users/lengjun/logs/master-stderr.log
+[egg-scripts] Or use `--ignore-stderr` to ignore stderr at startup.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! user-service@1.0.0 start: `egg-scripts start --port=7003 --daemon --title=egg-server-demo`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the user-service@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/lengjun/.npm/_logs/2019-09-24T10_36_13_507Z-debug.log
+
+> user-service@1.0.0 start /Users/lengjun/mycode/story/service/article-service
+> egg-scripts start --port=7003 --daemon --title=egg-server-demo
+
+[egg-scripts] Starting egg application at /Users/lengjun/mycode/story/service/article-service
+[egg-scripts] Run node /Users/lengjun/mycode/story/service/article-service/node_modules/egg-scripts/lib/start-cluster {"port":7003,"title":"egg-server-demo","baseDir":"/Users/lengjun/mycode/story/service/article-service","framework":"/Users/lengjun/mycode/story/service/article-service/node_modules/egg"} --title=egg-server-demo
+[egg-scripts] Save log file to /Users/lengjun/logs
+[egg-scripts] Wait Start: 1...
+[egg-scripts] Wait Start: 2...
+[egg-scripts] Wait Start: 3...
+[egg-scripts] tail -n 100 /Users/lengjun/logs/master-stderr.log
+[egg-scripts] Got error when startup: 
+[egg-scripts] 2019-09-24 18:37:28,829 ERROR 38280 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:37:28,834 ERROR 38278 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:37:28,838 ERROR 38284 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:37:28,839 ERROR 38279 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:37:28,840 ERROR 38286 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:37:28,849 ERROR 38276 nodejs.AppWorkerDiedError: [master] app_worker#3:38280 died (code: 0, signal: null, suicide: false, state: dead), current workers: ["1","2","4","5","6","7","8","9","10","11","12"]
+[egg-scripts]     at Master.onAppExit (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/master.js:510:21)
+[egg-scripts]     at emitOne (events.js:116:13)
+[egg-scripts]     at Master.emit (events.js:211:7)
+[egg-scripts]     at Messenger.sendToMaster (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/utils/messenger.js:137:17)
+[egg-scripts]     at Messenger.send (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/utils/messenger.js:102:12)
+[egg-scripts]     at EventEmitter.cluster.on (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/master.js:353:22)
+[egg-scripts]     at emitThree (events.js:141:20)
+[egg-scripts]     at EventEmitter.emit (events.js:217:7)
+[egg-scripts]     at ChildProcess.worker.process.once (internal/cluster/master.js:186:13)
+[egg-scripts]     at Object.onceWrapper (events.js:317:30)
+[egg-scripts] name: "AppWorkerDiedError"
+[egg-scripts] pid: 38276
+[egg-scripts] hostname: lengjun.local
+[egg-scripts] 
+[egg-scripts] 2019-09-24 18:37:28,850 ERROR 38276 [master] app_worker#3:38280 start fail, exiting with code:1
+[egg-scripts] 2019-09-24 18:37:28,850 ERROR 38276 [master] exit with code:1
+[egg-scripts] 2019-09-24 18:37:28,853 ERROR 38281 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:37:28,859 ERROR 38282 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:37:28,861 ERROR 38277 [agent_worker] receive disconnect event on child_process fork mode, exiting with code:110
+[egg-scripts] 2019-09-24 18:37:28,861 ERROR 38285 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:37:28,863 ERROR 38288 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:37:28,864 ERROR 38283 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:37:28,865 ERROR 38289 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:37:28,865 ERROR 38277 [agent_worker] exit with code:110
+[egg-scripts] 2019-09-24 18:37:28,867 ERROR 38287 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 
+[egg-scripts] Start got error, see /Users/lengjun/logs/master-stderr.log
+[egg-scripts] Or use `--ignore-stderr` to ignore stderr at startup.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! user-service@1.0.0 start: `egg-scripts start --port=7003 --daemon --title=egg-server-demo`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the user-service@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/lengjun/.npm/_logs/2019-09-24T10_37_30_836Z-debug.log
+
+> user-service@1.0.0 start /Users/lengjun/mycode/story/service/article-service
+> egg-scripts start --port=7003 --daemon --title=egg-server-demo
+
+[egg-scripts] Starting egg application at /Users/lengjun/mycode/story/service/article-service
+[egg-scripts] Run node /Users/lengjun/mycode/story/service/article-service/node_modules/egg-scripts/lib/start-cluster {"port":7003,"title":"egg-server-demo","baseDir":"/Users/lengjun/mycode/story/service/article-service","framework":"/Users/lengjun/mycode/story/service/article-service/node_modules/egg"} --title=egg-server-demo
+[egg-scripts] Save log file to /Users/lengjun/logs
+[egg-scripts] Wait Start: 1...
+[egg-scripts] Wait Start: 2...
+[egg-scripts] tail -n 100 /Users/lengjun/logs/master-stderr.log
+[egg-scripts] Got error when startup: 
+[egg-scripts] 2019-09-24 18:38:58,159 ERROR 38439 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:38:58,160 ERROR 38442 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:38:58,174 ERROR 38437 nodejs.AppWorkerDiedError: [master] app_worker#1:38439 died (code: 0, signal: null, suicide: false, state: dead), current workers: ["2","3","4","5","6","7","8","9","10","11","12"]
+[egg-scripts]     at Master.onAppExit (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/master.js:510:21)
+[egg-scripts]     at emitOne (events.js:116:13)
+[egg-scripts]     at Master.emit (events.js:211:7)
+[egg-scripts]     at Messenger.sendToMaster (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/utils/messenger.js:137:17)
+[egg-scripts]     at Messenger.send (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/utils/messenger.js:102:12)
+[egg-scripts]     at EventEmitter.cluster.on (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/master.js:353:22)
+[egg-scripts]     at emitThree (events.js:141:20)
+[egg-scripts]     at EventEmitter.emit (events.js:217:7)
+[egg-scripts]     at ChildProcess.worker.process.once (internal/cluster/master.js:186:13)
+[egg-scripts]     at Object.onceWrapper (events.js:317:30)
+[egg-scripts] name: "AppWorkerDiedError"
+[egg-scripts] pid: 38437
+[egg-scripts] hostname: lengjun.local
+[egg-scripts] 
+[egg-scripts] 2019-09-24 18:38:58,174 ERROR 38437 [master] app_worker#1:38439 start fail, exiting with code:1
+[egg-scripts] 2019-09-24 18:38:58,175 ERROR 38437 [master] exit with code:1
+[egg-scripts] 2019-09-24 18:38:58,182 ERROR 38438 [agent_worker] receive disconnect event on child_process fork mode, exiting with code:110
+[egg-scripts] 2019-09-24 18:38:58,184 ERROR 38448 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:38:58,185 ERROR 38438 [agent_worker] exit with code:110
+[egg-scripts] 2019-09-24 18:38:58,190 ERROR 38440 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:38:58,196 ERROR 38446 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:38:58,206 ERROR 38441 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:38:58,208 ERROR 38447 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:38:58,208 ERROR 38443 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:38:58,219 ERROR 38449 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:38:58,233 ERROR 38445 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:38:58,234 ERROR 38444 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:38:58,235 ERROR 38450 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 
+[egg-scripts] Start got error, see /Users/lengjun/logs/master-stderr.log
+[egg-scripts] Or use `--ignore-stderr` to ignore stderr at startup.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! user-service@1.0.0 start: `egg-scripts start --port=7003 --daemon --title=egg-server-demo`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the user-service@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/lengjun/.npm/_logs/2019-09-24T10_38_59_415Z-debug.log
+
+> user-service@1.0.0 start /Users/lengjun/mycode/story/service/article-service
+> egg-scripts start --port=7003 --daemon --title=egg-server-demo
+
+[egg-scripts] Starting egg application at /Users/lengjun/mycode/story/service/article-service
+[egg-scripts] Run node /Users/lengjun/mycode/story/service/article-service/node_modules/egg-scripts/lib/start-cluster {"port":7003,"title":"egg-server-demo","baseDir":"/Users/lengjun/mycode/story/service/article-service","framework":"/Users/lengjun/mycode/story/service/article-service/node_modules/egg"} --title=egg-server-demo
+[egg-scripts] Save log file to /Users/lengjun/logs
+[egg-scripts] Wait Start: 1...
+[egg-scripts] Wait Start: 2...
+[egg-scripts] tail -n 100 /Users/lengjun/logs/master-stderr.log
+[egg-scripts] Got error when startup: 
+[egg-scripts] 2019-09-24 18:41:27,433 ERROR 38685 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:41:27,433 ERROR 38686 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:41:27,434 ERROR 38684 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:41:27,435 ERROR 38688 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:41:27,438 ERROR 38691 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:41:27,450 ERROR 38689 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:41:27,455 ERROR 38681 nodejs.AppWorkerDiedError: [master] app_worker#1:38684 died (code: 0, signal: null, suicide: false, state: dead), current workers: ["2","3","4","5","6","7","8","9","10","11","12"]
+[egg-scripts]     at Master.onAppExit (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/master.js:510:21)
+[egg-scripts]     at emitOne (events.js:116:13)
+[egg-scripts]     at Master.emit (events.js:211:7)
+[egg-scripts]     at Messenger.sendToMaster (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/utils/messenger.js:137:17)
+[egg-scripts]     at Messenger.send (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/utils/messenger.js:102:12)
+[egg-scripts]     at EventEmitter.cluster.on (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/master.js:353:22)
+[egg-scripts]     at emitThree (events.js:141:20)
+[egg-scripts]     at EventEmitter.emit (events.js:217:7)
+[egg-scripts]     at ChildProcess.worker.process.once (internal/cluster/master.js:186:13)
+[egg-scripts]     at Object.onceWrapper (events.js:317:30)
+[egg-scripts] name: "AppWorkerDiedError"
+[egg-scripts] pid: 38681
+[egg-scripts] hostname: lengjun.local
+[egg-scripts] 
+[egg-scripts] 2019-09-24 18:41:27,455 ERROR 38681 [master] app_worker#1:38684 start fail, exiting with code:1
+[egg-scripts] 2019-09-24 18:41:27,456 ERROR 38681 [master] exit with code:1
+[egg-scripts] 2019-09-24 18:41:27,462 ERROR 38692 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:41:27,462 ERROR 38694 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:41:27,463 ERROR 38683 [agent_worker] receive disconnect event on child_process fork mode, exiting with code:110
+[egg-scripts] 2019-09-24 18:41:27,463 ERROR 38690 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:41:27,463 ERROR 38687 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:41:27,464 ERROR 38693 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:41:27,466 ERROR 38683 [agent_worker] exit with code:110
+[egg-scripts] 2019-09-24 18:41:27,468 ERROR 38695 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 
+[egg-scripts] Start got error, see /Users/lengjun/logs/master-stderr.log
+[egg-scripts] Or use `--ignore-stderr` to ignore stderr at startup.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! user-service@1.0.0 start: `egg-scripts start --port=7003 --daemon --title=egg-server-demo`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the user-service@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/lengjun/.npm/_logs/2019-09-24T10_41_28_749Z-debug.log
+
+> user-service@1.0.0 start /Users/lengjun/mycode/story/service/article-service
+> egg-scripts start --port=7003 --daemon --title=egg-server-demo
+
+[egg-scripts] Starting egg application at /Users/lengjun/mycode/story/service/article-service
+[egg-scripts] Run node /Users/lengjun/mycode/story/service/article-service/node_modules/egg-scripts/lib/start-cluster {"port":7003,"title":"egg-server-demo","baseDir":"/Users/lengjun/mycode/story/service/article-service","framework":"/Users/lengjun/mycode/story/service/article-service/node_modules/egg"} --title=egg-server-demo
+[egg-scripts] Save log file to /Users/lengjun/logs
+[egg-scripts] Wait Start: 1...
+[egg-scripts] Wait Start: 2...
+[egg-scripts] tail -n 100 /Users/lengjun/logs/master-stderr.log
+[egg-scripts] Got error when startup: 
+[egg-scripts] 2019-09-24 18:42:00,629 ERROR 38804 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:42:00,631 ERROR 38811 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:42:00,642 ERROR 38805 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:42:00,645 ERROR 38807 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:42:00,646 ERROR 38802 nodejs.AppWorkerDiedError: [master] app_worker#1:38804 died (code: 0, signal: null, suicide: false, state: dead), current workers: ["2","3","4","5","6","7","8","9","10","11","12"]
+[egg-scripts]     at Master.onAppExit (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/master.js:510:21)
+[egg-scripts]     at emitOne (events.js:116:13)
+[egg-scripts]     at Master.emit (events.js:211:7)
+[egg-scripts]     at Messenger.sendToMaster (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/utils/messenger.js:137:17)
+[egg-scripts]     at Messenger.send (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/utils/messenger.js:102:12)
+[egg-scripts]     at EventEmitter.cluster.on (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/master.js:353:22)
+[egg-scripts]     at emitThree (events.js:141:20)
+[egg-scripts]     at EventEmitter.emit (events.js:217:7)
+[egg-scripts]     at ChildProcess.worker.process.once (internal/cluster/master.js:186:13)
+[egg-scripts]     at Object.onceWrapper (events.js:317:30)
+[egg-scripts] name: "AppWorkerDiedError"
+[egg-scripts] pid: 38802
+[egg-scripts] hostname: lengjun.local
+[egg-scripts] 
+[egg-scripts] 2019-09-24 18:42:00,646 ERROR 38802 [master] app_worker#1:38804 start fail, exiting with code:1
+[egg-scripts] 2019-09-24 18:42:00,647 ERROR 38802 [master] exit with code:1
+[egg-scripts] 2019-09-24 18:42:00,651 ERROR 38809 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:42:00,651 ERROR 38806 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:42:00,655 ERROR 38803 [agent_worker] receive disconnect event on child_process fork mode, exiting with code:110
+[egg-scripts] 2019-09-24 18:42:00,656 ERROR 38813 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:42:00,657 ERROR 38810 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:42:00,658 ERROR 38803 [agent_worker] exit with code:110
+[egg-scripts] 2019-09-24 18:42:00,660 ERROR 38814 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:42:00,662 ERROR 38815 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:42:00,663 ERROR 38808 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:42:00,665 ERROR 38812 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 
+[egg-scripts] Start got error, see /Users/lengjun/logs/master-stderr.log
+[egg-scripts] Or use `--ignore-stderr` to ignore stderr at startup.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! user-service@1.0.0 start: `egg-scripts start --port=7003 --daemon --title=egg-server-demo`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the user-service@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/lengjun/.npm/_logs/2019-09-24T10_42_01_850Z-debug.log
+
+> user-service@1.0.0 start /Users/lengjun/mycode/story/service/article-service
+> egg-scripts start --port=7003 --daemon --title=egg-server-demo
+
+[egg-scripts] Starting egg application at /Users/lengjun/mycode/story/service/article-service
+[egg-scripts] Run node /Users/lengjun/mycode/story/service/article-service/node_modules/egg-scripts/lib/start-cluster {"port":7003,"title":"egg-server-demo","baseDir":"/Users/lengjun/mycode/story/service/article-service","framework":"/Users/lengjun/mycode/story/service/article-service/node_modules/egg"} --title=egg-server-demo
+[egg-scripts] Save log file to /Users/lengjun/logs
+[egg-scripts] Wait Start: 1...
+[egg-scripts] Wait Start: 2...
+[egg-scripts] tail -n 100 /Users/lengjun/logs/master-stderr.log
+[egg-scripts] Got error when startup: 
+[egg-scripts] 2019-09-24 18:42:11,208 ERROR 38922 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:42:11,209 ERROR 38915 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:42:11,210 ERROR 38918 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:42:11,210 ERROR 38917 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:42:11,215 ERROR 38916 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:42:11,224 ERROR 38923 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:42:11,224 ERROR 38921 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:42:11,225 ERROR 38919 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:42:11,233 ERROR 38912 nodejs.AppWorkerDiedError: [master] app_worker#1:38915 died (code: 0, signal: null, suicide: false, state: dead), current workers: ["2","3","4","5","6","7","8","9","10","11","12"]
+[egg-scripts]     at Master.onAppExit (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/master.js:510:21)
+[egg-scripts]     at emitOne (events.js:116:13)
+[egg-scripts]     at Master.emit (events.js:211:7)
+[egg-scripts]     at Messenger.sendToMaster (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/utils/messenger.js:137:17)
+[egg-scripts]     at Messenger.send (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/utils/messenger.js:102:12)
+[egg-scripts]     at EventEmitter.cluster.on (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/master.js:353:22)
+[egg-scripts]     at emitThree (events.js:141:20)
+[egg-scripts]     at EventEmitter.emit (events.js:217:7)
+[egg-scripts]     at ChildProcess.worker.process.once (internal/cluster/master.js:186:13)
+[egg-scripts]     at Object.onceWrapper (events.js:317:30)
+[egg-scripts] name: "AppWorkerDiedError"
+[egg-scripts] pid: 38912
+[egg-scripts] hostname: lengjun.local
+[egg-scripts] 
+[egg-scripts] 2019-09-24 18:42:11,234 ERROR 38912 [master] app_worker#1:38915 start fail, exiting with code:1
+[egg-scripts] 2019-09-24 18:42:11,234 ERROR 38912 [master] exit with code:1
+[egg-scripts] 2019-09-24 18:42:11,237 ERROR 38925 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-24 18:42:11,242 ERROR 38914 [agent_worker] receive disconnect event on child_process fork mode, exiting with code:110
+[egg-scripts] 2019-09-24 18:42:11,242 ERROR 38926 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:42:11,242 ERROR 38920 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:42:11,245 ERROR 38924 [app_worker] receive disconnect event in cluster fork mode, exitedAfterDisconnect:false
+[egg-scripts] 2019-09-24 18:42:11,245 ERROR 38914 [agent_worker] exit with code:110
+[egg-scripts] 
+[egg-scripts] Start got error, see /Users/lengjun/logs/master-stderr.log
+[egg-scripts] Or use `--ignore-stderr` to ignore stderr at startup.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! user-service@1.0.0 start: `egg-scripts start --port=7003 --daemon --title=egg-server-demo`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the user-service@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/lengjun/.npm/_logs/2019-09-24T10_42_12_486Z-debug.log
+
+> user-service@1.0.0 start /Users/lengjun/mycode/story/service/article-service
+> egg-scripts start --port=7003 --daemon --title=egg-server-demo
+
+[egg-scripts] Starting egg application at /Users/lengjun/mycode/story/service/article-service
+[egg-scripts] Run node /Users/lengjun/mycode/story/service/article-service/node_modules/egg-scripts/lib/start-cluster {"port":7003,"title":"egg-server-demo","baseDir":"/Users/lengjun/mycode/story/service/article-service","framework":"/Users/lengjun/mycode/story/service/article-service/node_modules/egg"} --title=egg-server-demo
+[egg-scripts] Save log file to /Users/lengjun/logs
+[egg-scripts] Wait Start: 1...
+[egg-scripts] Wait Start: 2...
+[egg-scripts] Wait Start: 3...
+[egg-scripts] tail -n 100 /Users/lengjun/logs/master-stderr.log
+[egg-scripts] Got error when startup: 
+[egg-scripts] 2019-09-25 10:45:54,244 ERROR 42042 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-25 10:45:54,245 ERROR 42041 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-25 10:45:54,248 ERROR 42044 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-25 10:45:54,249 ERROR 42048 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-25 10:45:54,251 ERROR 42046 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-25 10:45:54,254 ERROR 42051 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-25 10:45:54,256 ERROR 42052 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-25 10:45:54,257 ERROR 42049 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-25 10:45:54,259 ERROR 42043 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-25 10:45:54,260 ERROR 42045 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-25 10:45:54,265 ERROR 42050 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-25 10:45:54,266 ERROR 42037 nodejs.AppWorkerDiedError: [master] app_worker#2:42042 died (code: 0, signal: null, suicide: false, state: dead), current workers: ["1","3","4","5","6","7","8","9","10","11","12"]
+[egg-scripts]     at Master.onAppExit (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/master.js:510:21)
+[egg-scripts]     at emitOne (events.js:116:13)
+[egg-scripts]     at Master.emit (events.js:211:7)
+[egg-scripts]     at Messenger.sendToMaster (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/utils/messenger.js:137:17)
+[egg-scripts]     at Messenger.send (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/utils/messenger.js:102:12)
+[egg-scripts]     at EventEmitter.cluster.on (/Users/lengjun/mycode/story/service/article-service/node_modules/egg-cluster/lib/master.js:353:22)
+[egg-scripts]     at emitThree (events.js:141:20)
+[egg-scripts]     at EventEmitter.emit (events.js:217:7)
+[egg-scripts]     at ChildProcess.worker.process.once (internal/cluster/master.js:186:13)
+[egg-scripts]     at Object.onceWrapper (events.js:317:30)
+[egg-scripts] name: "AppWorkerDiedError"
+[egg-scripts] pid: 42037
+[egg-scripts] hostname: lengjun.local
+[egg-scripts] 
+[egg-scripts] 2019-09-25 10:45:54,266 ERROR 42037 [master] app_worker#2:42042 start fail, exiting with code:1
+[egg-scripts] 2019-09-25 10:45:54,267 ERROR 42037 [master] exit with code:1
+[egg-scripts] 2019-09-25 10:45:54,269 ERROR 42047 [app_worker] server got error: bind EADDRINUSE null:7003, code: EADDRINUSE
+[egg-scripts] 2019-09-25 10:45:54,279 ERROR 42039 [agent_worker] receive disconnect event on child_process fork mode, exiting with code:110
+[egg-scripts] 2019-09-25 10:45:54,282 ERROR 42039 [agent_worker] exit with code:110
+[egg-scripts] 
+[egg-scripts] Start got error, see /Users/lengjun/logs/master-stderr.log
+[egg-scripts] Or use `--ignore-stderr` to ignore stderr at startup.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! user-service@1.0.0 start: `egg-scripts start --port=7003 --daemon --title=egg-server-demo`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the user-service@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/lengjun/.npm/_logs/2019-09-25T02_45_56_075Z-debug.log

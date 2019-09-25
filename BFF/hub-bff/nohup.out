@@ -1,0 +1,10 @@
+
+> user-service@1.0.0 start /Users/lengjun/mycode/story/BFF/hub-bff
+> egg-scripts start --port=7002 --daemon --title=egg-server-demo
+
+[egg-scripts] Starting egg application at /Users/lengjun/mycode/story/BFF/hub-bff
+[egg-scripts] Run node /Users/lengjun/mycode/story/BFF/hub-bff/node_modules/egg-scripts/lib/start-cluster {"port":7002,"title":"egg-server-demo","baseDir":"/Users/lengjun/mycode/story/BFF/hub-bff","framework":"/Users/lengjun/mycode/story/BFF/hub-bff/node_modules/egg"} --title=egg-server-demo
+[egg-scripts] Save log file to /Users/lengjun/logs
+[egg-scripts] Wait Start: 1...
+[egg-scripts] Wait Start: 2...
+[egg-scripts] egg started on http://127.0.0.1:7002

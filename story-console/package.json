@@ -1,6 +1,7 @@
 {
   "name": "story-console",
   "version": "0.1.0",
+  "port": "8080",
   "private": true,
   "dependencies": {
     "antd": "^3.21.2",
