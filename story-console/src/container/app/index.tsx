@@ -9,10 +9,12 @@ const { Header, Content, Footer, Sider } = Layout;
 export default function App(props: RouteComponentProps) {
   const [collapsed, setCollapse] = useState<boolean>(false)
   const onCollapse = () => setCollapse(!collapsed)
-  const defaultsKeys = props.location.pathname
+  const defaultsKeys = handleDefaultsKeys()
+  const defaultSelectedKeys = [defaultsKeys]
+  console.log('defaultsKeys', defaultsKeys, defaultSelectedKeys)
   const token = getSessionTokenOrLocal()
   if (token === '') {
-    debugger
+    // debugger
     logout()
     return null
   }
@@ -20,7 +22,7 @@ export default function App(props: RouteComponentProps) {
     <Layout style={{ minHeight: '100vh' }}>
       <Sider collapsible collapsed={collapsed} onCollapse={onCollapse}>
         <div className="logo" />
-        <Menu theme="dark" defaultSelectedKeys={[defaultsKeys]} mode="inline">
+        <Menu theme="dark" selectedKeys={defaultSelectedKeys} mode="inline">
           <Menu.Item key="/console/dashboard">
             <Link to="/console/dashboard"><span>仪表盘</span></Link>
           </Menu.Item>
@@ -41,4 +43,12 @@ export default function App(props: RouteComponentProps) {
       </Layout>
     </Layout>
   )
+
+  function handleDefaultsKeys() {
+    let url = props.location.pathname
+    if (url.startsWith('/console/writing')) {
+      return '/console/writing'
+    }
+    return url
+  }
 }

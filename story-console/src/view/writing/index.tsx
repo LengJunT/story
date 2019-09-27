@@ -1,24 +1,52 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect} from 'react'
 import { Input, Button, message } from 'antd'
 import BraftEditor from 'braft-editor'
-import { setArticle } from '../../action/article'
-import { CommonRes } from '../../common/types'
+import { setArticle ,getMyArticle} from '../../action/article'
+import { CommonRes, ArticleDataType } from '../../common/types'
+import { RouteComponentProps } from 'react-router'
+import {isEmpty} from '../../util'
+
 import 'braft-editor/dist/index.css'
 import './index.scss'
-export default function Dashboard() {
+import { async } from 'q'
+
+interface Params {
+    id?:string | undefined
+}
+interface GetArticleData {
+    content:ArticleDataType
+}
+interface SetArticleDataType {
+    title:string;
+    content:string;
+    isDraft:boolean;
+    id?:string;
+    type?:string;
+}
+export default function Dashboard(props:RouteComponentProps) {
     const [editorState, setEditorState] = useState<any>()
     const [title, setTitle] = useState<string>('')
-
+    const [articleData, setArticleData] = useState<ArticleDataType | undefined>()
+    useEffect(()=>{
+        const params:Params = props.match.params
+        if(params.id){
+            getArticle(params.id)
+        }
+    },[])
     const handleArticle = (isDraft: boolean) => {
         if (!title) {
             message.warning('请填写文章标题')
             return false
         }
         const htmlContent = editorState.toHTML()
-        const data = {
+        let data:SetArticleDataType = {
             title,
             content: htmlContent,
             isDraft
+        }
+        if(articleData){
+            data.id = articleData.id
+            data.type = articleData.isDraft?'draft':'formal'
         }
         if (data) {
             setArticle(data).then((res: CommonRes )=> {
@@ -50,4 +78,12 @@ export default function Dashboard() {
             />
         </div>
     )
+
+    async function getArticle(id:string) {
+        const data = await getMyArticle(id)
+        const { content } = data
+        setArticleData(content)
+        setTitle(content.title)
+        setEditorState(BraftEditor.createEditorState(content.content))
+    } 
 }

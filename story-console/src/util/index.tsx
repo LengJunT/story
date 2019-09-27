@@ -50,3 +50,13 @@ function setExpiredValue(key: string, value: string, duration = 3600000) {
 export function clear() {
     window.localStorage.clear()
 }
+
+
+export function isEmpty(val:any) {
+    return (
+      val === undefined ||
+      val === null ||
+      val === false ||
+      val.length <= 0 || (typeof val === 'object' && !Object.getOwnPropertySymbols(val).length && !Object.getOwnPropertyNames(val).length)
+    )
+  }

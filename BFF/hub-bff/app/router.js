@@ -8,4 +8,6 @@ module.exports = app => {
   router.post('/saveArticle', checkToken, controller.article.saveArticleController)
   // 获取当前用户的文章列表
   router.get('/myArticle', checkToken, controller.article.getMyArticle)
+  // 获取当前用户的指定文章
+  router.get('/myArticle/:id', checkToken, controller.article.getMyArticle)
 };

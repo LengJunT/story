@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "用户基础服务",
   "private": true,
+  "port":7001,
   "egg": {
     "declarations": true
   },
@@ -28,7 +29,7 @@
     "node": ">=10.0.0"
   },
   "scripts": {
-    "start": "egg-scripts start --port=7001 --daemon --title=egg-server-demo",
+    "start": "egg-scripts start --daemon --title=egg-server-demo",
     "stop": "egg-scripts stop --title=egg-server-demo",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",

@@ -3,6 +3,10 @@ export function setArticle(data){
     return jFetch.post('/saveArticle',{data});
 }
 
-export function getMyArticle(){
-    return jFetch.get('/myArticle');
+export function getMyArticle(id){
+    let url = '/myArticle'
+    if(id){
+        url = `/myArticle/${id}`
+    }
+    return jFetch.get(url);
 }

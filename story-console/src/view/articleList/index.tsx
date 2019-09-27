@@ -1,27 +1,23 @@
 import React, { useState, useEffect } from 'react'
 import { getMyArticle } from '../../action/article'
+import {ArticleDataType} from '../../common/types'
 import { List, message } from 'antd'
+// import { withRouter } from 'react-router-dom'
+import { RouteComponentProps } from 'react-router'
 import './index.scss'
 // import { async } from 'q';
 
 interface ArticleItemProps {
-    creatTime: string;
-    updateTime: string;
-    uid: string
-    id: string;
-    title: string;
-    content: string;
-    likeCount?: number | null;
-    read?: number | null;
-    collectionCount?: number | null;
-    draft?: boolean;
-}
-interface ArticleData {
-    article: Array<ArticleItemProps> | undefined;
-    articleDraft: Array<ArticleItemProps> | undefined;
+    data: ArticleDataType;
+    onClick: Function;
 }
 
-export default function ArticleList() {
+interface ArticleData {
+    article: Array<ArticleDataType> | undefined;
+    articleDraft: Array<ArticleDataType> | undefined;
+}
+
+export default function ArticleList(props: RouteComponentProps) {
     const [loading, setLoading] = useState<boolean>(false)
     const [hasMore, setHasMore] = useState<boolean>(true)
     const [data, setData] = useState<ArticleData>({ article: [], articleDraft: [] })
@@ -32,19 +28,24 @@ export default function ArticleList() {
     return (<div className="article-page">
         <div className="lists">
             {
-                articleDraft.map((item: ArticleItemProps) => {
+                articleDraft.map((item: ArticleDataType) => {
                     const { id } = item
-                    return <ArticleItem {...item} key={id} draft />
+                    return <ArticleItem data={{ ...item, draft: true }} key={id} onClick={handleClick} />
                 })
             }
             {
-                article.map((item: ArticleItemProps) => {
+                article.map((item: ArticleDataType) => {
                     const { id } = item
-                    return <ArticleItem {...item} key={id} />
+                    return <ArticleItem data={{ ...item }} key={id} onClick={handleClick} />
                 })
             }
         </div>
     </div>)
+    function handleClick(id: string) {
+        return function () {
+            props.history.push(`/console/writing/${id}`)
+        }
+    }
 
     async function getArt() {
         const data = await getMyArticle()
@@ -55,9 +56,10 @@ export default function ArticleList() {
 }
 
 function ArticleItem(props: ArticleItemProps) {
-    const { title, content, read, likeCount, collectionCount, draft } = props
+    const { data, onClick:click } = props
+    const { title, content, read, likeCount, collectionCount, draft, id } = data
     return (
-        <div className="article-item">
+        <div className="article-item" onClick={click(id)}>
             <div className="article-item-title">
                 {title}
             </div>

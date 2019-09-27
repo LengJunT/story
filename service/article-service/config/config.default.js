@@ -17,6 +17,11 @@ module.exports = appInfo => {
 
     // add your middleware config here
     config.middleware = [];
+    config.cluster = {
+        listen: {
+            port: 7003,
+        }
+    }
     config.security = {
         csrf: {
             enable: false,
