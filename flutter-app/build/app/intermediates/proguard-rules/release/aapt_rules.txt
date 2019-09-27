@@ -1,0 +1,6 @@
+# Referenced at /Users/lengjun/AndroidStudioProjects/flutter_juejin/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:19
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at /Users/lengjun/AndroidStudioProjects/flutter_juejin/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:25
+-keep class com.example.leng_jun.MainActivity { <init>(); }
+# Referenced at /Users/lengjun/AndroidStudioProjects/flutter_juejin/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:19
+-keep class io.flutter.app.FlutterApplication { <init>(); }
