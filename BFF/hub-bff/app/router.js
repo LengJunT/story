@@ -10,4 +10,6 @@ module.exports = app => {
   router.get('/myArticle', checkToken, controller.article.getMyArticle)
   // 获取当前用户的指定文章
   router.get('/myArticle/:id', checkToken, controller.article.getMyArticle)
+  // 获取所有文章
+  router.get('/getArticle', controller.article.getArticle)
 };

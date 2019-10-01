@@ -44,6 +44,22 @@ class ArticleController extends Controller {
             msg:'操作失败'
         }
     }
+
+    async getArticle(){
+        const data = await this.ctx.service.article.getArticle()
+        if(data){
+            this.ctx.body = {
+                code: 'SUCCESS',
+                content:data
+            }
+            return
+        }
+        this.ctx.body = {
+            code: 'FALL',
+            content:false,
+            msg:'操作失败'
+        }
+    }
 }
 
 module.exports = ArticleController;

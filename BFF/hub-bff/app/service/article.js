@@ -1,6 +1,6 @@
 const Service = require('egg').Service;
 module.exports = class ArticleService extends Service {
-    async saveArticle({id,uid,title,content,isDraft, type}) {
+    async saveArticle({ id, uid, title, content, isDraft, type }) {
         const ctx = this.ctx
         const result = await ctx.curl('http://127.0.0.1:7003/saveArticle', {
             // 必须指定 method
@@ -8,7 +8,7 @@ module.exports = class ArticleService extends Service {
             // 通过 contentType 告诉 HttpClient 以 JSON 格式发送
             contentType: 'json',
             data: {
-                id,uid,title,content,isDraft, type
+                id, uid, title, content, isDraft, type
             },
             // 明确告诉 HttpClient 以 JSON 格式处理返回的响应 body
             dataType: 'json',
@@ -17,9 +17,9 @@ module.exports = class ArticleService extends Service {
         return result.data
     }
 
-    async getMyArticle({uid}){
+    async getMyArticle({ uid }) {
         const ctx = this.ctx
-        if(!uid) return false
+        if (!uid) return false
         const result = await ctx.curl('http://127.0.0.1:7003/myArticle', {
             // 必须指定 method
             method: 'get',
@@ -31,7 +31,21 @@ module.exports = class ArticleService extends Service {
             // 明确告诉 HttpClient 以 JSON 格式处理返回的响应 body
             dataType: 'json',
         })
-        console.log('myArticle',result, uid)
+        console.log('myArticle', result, uid)
+        return result.data
+    }
+    async getArticle() {
+        const ctx = this.ctx
+        const result = await ctx.curl('http://127.0.0.1:7003/getArticle', {
+            // 必须指定 method
+            method: 'get',
+            // 通过 contentType 告诉 HttpClient 以 JSON 格式发送
+            contentType: 'json',
+            data: {},
+            // 明确告诉 HttpClient 以 JSON 格式处理返回的响应 body
+            dataType: 'json',
+        })
+        console.log('getArticle', result)
         return result.data
     }
 }

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "用户基础服务",
   "private": true,
-  "port":7001,
+  "port": 7001,
   "egg": {
     "declarations": true
   },
@@ -13,6 +13,7 @@
     "egg-scripts": "^2.11.0",
     "fs": "0.0.1-security",
     "jsonwebtoken": "^8.5.1",
+    "omit": "^1.0.1",
     "path": "^0.12.7",
     "uuid": "^3.3.2"
   },

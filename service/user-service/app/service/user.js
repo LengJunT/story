@@ -1,5 +1,6 @@
 const Service = require('egg').Service;
 const V4 = require('uuid')
+const omit = require('omit')
 
 class UserService extends Service {
     async addUser(userData) {
@@ -7,7 +8,7 @@ class UserService extends Service {
         try {
             if (name && passWord) {
                 const userInfo = await this.getUser(name)
-                if(userInfo !== null){
+                if (userInfo !== null) {
                     return {
                         success: -1
                     }
@@ -29,10 +30,38 @@ class UserService extends Service {
         }
     }
     async getUser(name) {
-        const data = await this.app.mysql.get('user',{name})
+        const data = await this.app.mysql.get('user', { name })
         console.log('getUser', data)
         return data
     }
-
+    async getUserInfo(id) {
+        let data = {}
+        if (id.length > 0) {
+            data = await this.app.mysql.select('user', { where: { id } })
+        } else {
+            data = await this.app.mysql.get('user', { id })
+        }
+        console.log('getUserInfo', data)
+        data = handleUserBuffer(data)
+        console.log('getUserInfo', data)
+        return data
+    }
 }
+
+function handleUserBuffer(users) {
+    if (users && users.length > 0) {
+        // console.log('handleUserBuffer', data)        
+        return JSON.parse(JSON.stringify(users)).map(item => {
+            item.id = new Buffer(item.id).toString()
+            item.name = new Buffer(item.name).toString()
+            return omit(item, 'passWord')
+        })
+    } else if (users) {
+        let item = JSON.parse(JSON.stringify(users))
+        item.id = new Buffer(item.id).toString()
+        item.name = new Buffer(item.name).toString()
+        return omit(item, 'passWord')
+    }
+}
+
 module.exports = UserService;

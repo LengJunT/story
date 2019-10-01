@@ -225,203 +225,201 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_layout_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout.js */ "./components/layout.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! moment */ "moment");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/lengjun/mycode/story/ssr-blogs/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
+
+
 class index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  static async getInitialProps() {
+    const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()('http://127.0.0.1:7002/getArticle');
+    const data = await res.json();
+    return {
+      articleList: data.content
+    };
+  }
+
   render() {
+    console.log('this.props', this.props);
+    const {
+      articleList = []
+    } = this.props;
     return __jsx(_components_layout_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 6
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "books-app",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 7
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "books-app-header",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 8
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "app-toolbar",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9
-      },
-      __self: this
-    }, __jsx("span", {
-      className: "app-close",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 10
-      },
-      __self: this
-    }), __jsx("span", {
-      className: "app-min",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: this
-    }), __jsx("span", {
-      className: "app-max",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: this
-    })), "\u56FE\u4E66"), __jsx("div", {
-      className: "books-app-content",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 16
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "books-app-content-header books-app-data",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 17
       },
       __self: this
     }, __jsx("div", {
-      className: "books-app-data-name",
+      className: "books-app",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 18
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "books-app-header",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "app-toolbar",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    }, __jsx("span", {
+      className: "app-close",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    }), __jsx("span", {
+      className: "app-min",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22
+      },
+      __self: this
+    }), __jsx("span", {
+      className: "app-max",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    })), "\u56FE\u4E66"), __jsx("div", {
+      className: "books-app-content",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "books-app-content-header books-app-data",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "books-app-data-name",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
       },
       __self: this
     }, "\u540D\u79F0"), __jsx("div", {
       className: "books-app-data-author",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 30
       },
       __self: this
     }, "\u4F5C\u8005"), __jsx("div", {
       className: "books-app-data-star",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
+        lineNumber: 31
       },
       __self: this
     }, "star"), __jsx("div", {
       className: "books-app-data-tags",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21
+        lineNumber: 32
       },
       __self: this
     }, "\u6807\u7B7E"), __jsx("div", {
       className: "books-app-data-date",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22
+        lineNumber: 33
       },
       __self: this
     }, "\u65F6\u95F4")), __jsx("div", {
       className: "books-app-content-list",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "books-app-data books-app-item-row",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 25
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "books-app-data-name",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 26
-      },
-      __self: this
-    }, "\u540D\u79F0"), __jsx("div", {
-      className: "books-app-data-author",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 27
-      },
-      __self: this
-    }, "\u4F5C\u8005"), __jsx("div", {
-      className: "books-app-data-star",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 28
-      },
-      __self: this
-    }, "star"), __jsx("div", {
-      className: "books-app-data-tags",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 29
-      },
-      __self: this
-    }, "\u6807\u7B7E"), __jsx("div", {
-      className: "books-app-data-date",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 30
-      },
-      __self: this
-    }, "\u65F6\u95F4")), __jsx("div", {
-      className: "books-app-data books-app-item-row",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 32
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "books-app-data-name",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 33
-      },
-      __self: this
-    }, "\u540D\u79F0"), __jsx("div", {
-      className: "books-app-data-author",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 34
-      },
-      __self: this
-    }, "\u4F5C\u8005"), __jsx("div", {
-      className: "books-app-data-star",
-      __source: {
-        fileName: _jsxFileName,
         lineNumber: 35
       },
       __self: this
-    }, "star"), __jsx("div", {
-      className: "books-app-data-tags",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 36
-      },
-      __self: this
-    }, "\u6807\u7B7E"), __jsx("div", {
-      className: "books-app-data-date",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 37
-      },
-      __self: this
-    }, "\u65F6\u95F4"))))));
+    }, articleList.map(item => {
+      const {
+        title,
+        id,
+        likeCount,
+        updateTime,
+        userInfo = {}
+      } = item;
+      const {
+        name
+      } = userInfo;
+      return __jsx("div", {
+        className: "books-app-data books-app-item-row",
+        key: id,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41
+        },
+        __self: this
+      }, __jsx("div", {
+        className: "books-app-data-name",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
+        },
+        __self: this
+      }, title), __jsx("div", {
+        className: "books-app-data-author",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43
+        },
+        __self: this
+      }, name), __jsx("div", {
+        className: "books-app-data-star",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
+        },
+        __self: this
+      }, likeCount), __jsx("div", {
+        className: "books-app-data-tags",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45
+        },
+        __self: this
+      }), __jsx("div", {
+        className: "books-app-data-date",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
+        },
+        __self: this
+      }, handleDate(updateTime)));
+    })))));
   }
 
+}
+
+function handleDate(time) {
+  if (time) {
+    console.log(time);
+    return moment__WEBPACK_IMPORTED_MODULE_3___default()(time).format('YYYY-MM-DD');
+  }
+
+  return '';
 }
 
 /***/ }),
@@ -435,6 +433,28 @@ class index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
 module.exports = __webpack_require__(/*! /Users/lengjun/mycode/story/ssr-blogs/pages/index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "isomorphic-unfetch":
+/*!*************************************!*\
+  !*** external "isomorphic-unfetch" ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("isomorphic-unfetch");
+
+/***/ }),
+
+/***/ "moment":
+/*!*************************!*\
+  !*** external "moment" ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("moment");
 
 /***/ }),
 

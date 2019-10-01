@@ -4,4 +4,5 @@ module.exports = app => {
     router.post('/registered', controller.registered.index);
     router.post('/login', controller.login.index);
     router.post('/checkToken', controller.token.index);
+    router.post('/getUserInfo', controller.user.index);
   };

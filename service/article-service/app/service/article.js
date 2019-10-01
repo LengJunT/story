@@ -46,6 +46,11 @@ module.exports = class ArticleService extends Service {
             articleDraft: handleArticle(articleDraft, true) || []
         }
     }
+
+    async getArticle(){
+        const article = await this.app.mysql.select('article') || []
+        return handleArticle(article, false) || []
+    }
 }
 
 function handleArticle(article, isDraft) {
