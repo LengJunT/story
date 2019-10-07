@@ -31,7 +31,7 @@ module.exports = class ArticleService extends Service {
             }
             result = await this.app.mysql.update(tableName, data)
         } else {
-            // 创建 
+            // 创建
             data.id = V4()
             result = await this.app.mysql.insert(tableName, data)
         }
@@ -48,7 +48,7 @@ module.exports = class ArticleService extends Service {
     }
 
     async getArticle(){
-        const article = await this.app.mysql.select('article') || []
+        const article = await this.app.mysql.select('article',{orders:[['updateTime','desc']]}) || []
         return handleArticle(article, false) || []
     }
 }

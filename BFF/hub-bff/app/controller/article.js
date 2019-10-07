@@ -1,4 +1,4 @@
-const Controller = require('egg').Controller;
+const Controller = require('egg').Controller
 const getTokenData = require('../uilt')
 let users = {}
 module.exports = class ArticleController extends Controller {
@@ -77,6 +77,7 @@ module.exports = class ArticleController extends Controller {
                     content[index].userInfo = users[uid]
                 }
             })
+            console.log('needQueryIds', needQueryIds)
             if (needQueryIds.length > 0) {
                 const idData = await ctx.service.user.index({ id: needQueryIds })
                 const ids = idData.content

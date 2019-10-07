@@ -1,0 +1,30 @@
+@mixin commonWindow($left:10%, $top:10%) {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 0 10px 0 black;
+  top: $top;
+  left: $left;
+  font-size: 12px;
+  overflow: hidden;
+}
+@mixin commonWindowHeader {
+    background-color: #ccc;
+    text-align: center;
+    background-color: #ccc;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+@mixin commonWindowContent($headerHeight:30px) {
+    width: 100%;
+    height: calc(100% - #{$headerHeight});
+}
+
+@mixin textOverflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }

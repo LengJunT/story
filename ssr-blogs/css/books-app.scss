@@ -1,29 +1,14 @@
 .books-app {
-  position: absolute;
-  width: 70%;
-  height: 70%;
-  border-radius: 4px;
-  background-color: white;
-  box-shadow: 0 0 10px 0 black;
-  top: 10%;
-  left: 10%;
-  font-size: 12px;
-  overflow: hidden;
+  @include commonWindow;
   &-header {
-    background-color: #ccc;
-    text-align: center;
-    background-color: #ccc;
-    text-align: center;
-    padding: 5px 10px;
-    font-size: 14px;
+    @include commonWindowHeader;
   }
   &-content {
-    width: 100%;
-    height: calc(100% - 30px);
+    @include commonWindowContent;
     &-header {
       display: flex;
       &.books-app-data {
-    //   padding: 2px 4px;
+        //   padding: 2px 4px;
         background: linear-gradient(#f0f0f0, #eff0ef, #f0f0f0);
         > div {
           border-right: 1px solid #d7d6d6;
@@ -41,15 +26,16 @@
       }
       &-name {
         width: auto;
-        flex: 3;
+        flex: 4;
       }
       &-author {
         width: 100px;
-        flex: 2;
+        flex: 1;
       }
       &-star {
         width: 50px;
         flex: 1;
+        @include textOverflow;
       }
       &-tags {
         width: 50px;
@@ -61,6 +47,8 @@
       }
     }
     .books-app-item-row {
+      text-decoration: none;
+      color: inherit;
     }
     .books-app-content-list {
       height: calc(100% - 29px);

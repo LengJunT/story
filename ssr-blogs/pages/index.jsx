@@ -1,7 +1,8 @@
 import React from 'react'
 import Layout from '../components/layout.js'
 import fetch from 'isomorphic-unfetch'
-import moment from 'moment'
+import {handleDate} from '../util'
+import Link from 'next/link'
 export default class index extends React.Component {
     static async getInitialProps() {
         const res = await fetch('http://127.0.0.1:7002/getArticle')
@@ -38,15 +39,17 @@ export default class index extends React.Component {
                                     const { title, id, likeCount, updateTime, userInfo = {} } = item
                                     const { name } = userInfo
                                     return (
-                                        <div className="books-app-data books-app-item-row" key={id}>
-                                            <div className="books-app-data-name">{title}</div>
-                                            <div className="books-app-data-author">{name}</div>
-                                            <div className="books-app-data-star">{likeCount}</div>
-                                            <div className="books-app-data-tags">
-                                                {/* 标签 */}
-                                            </div>
-                                            <div className="books-app-data-date">{handleDate(updateTime)}</div>
-                                        </div>
+                                        <Link href={{ pathname: '/article', query: { id: id }}} key={id}>
+                                            <a className="books-app-data books-app-item-row" target="_blank">
+                                                <div className="books-app-data-name">{title}</div>
+                                                <div className="books-app-data-author">{name}</div>
+                                                <div className="books-app-data-star">{likeCount}</div>
+                                                <div className="books-app-data-tags">
+                                                    {/* 标签 */}
+                                                </div>
+                                                <div className="books-app-data-date">{handleDate(updateTime)}</div>
+                                            </a>
+                                        </Link>
                                     )
                                 })
                             }
@@ -56,12 +59,8 @@ export default class index extends React.Component {
             </Layout>
         )
     }
-}
 
-function handleDate(time) {
-    if (time) {
-        console.log(time)
-        return moment(time).format('YYYY-MM-DD')
+    toBookInfo = (id) => (e) => {
+        window.open(`/article/${id}`)
     }
-    return ''
 }

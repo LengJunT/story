@@ -1,6 +1,6 @@
 const Service = require('egg').Service;
 const V4 = require('uuid')
-const omit = require('omit')
+const omit = require('omit.js')
 
 class UserService extends Service {
     async addUser(userData) {
@@ -50,17 +50,19 @@ class UserService extends Service {
 
 function handleUserBuffer(users) {
     if (users && users.length > 0) {
-        // console.log('handleUserBuffer', data)        
+        // console.log('handleUserBuffer', data)
         return JSON.parse(JSON.stringify(users)).map(item => {
             item.id = new Buffer(item.id).toString()
             item.name = new Buffer(item.name).toString()
-            return omit(item, 'passWord')
+            const data = omit(item, ['passWord'])
+            return data
         })
     } else if (users) {
         let item = JSON.parse(JSON.stringify(users))
         item.id = new Buffer(item.id).toString()
         item.name = new Buffer(item.name).toString()
-        return omit(item, 'passWord')
+        const data = omit(item, ['passWord'])
+        return data
     }
 }
 
